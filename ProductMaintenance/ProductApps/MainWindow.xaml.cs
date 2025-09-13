@@ -42,7 +42,7 @@ namespace ProductApps
                 wrapChargeTextBox.Text = Convert.ToString(totalPayment + deliveryCharge + wrapCharge);
                 double wrapTotal = totalPayment + deliveryCharge + wrapCharge;
                 double gstCharge = (totalPayment + deliveryCharge + wrapCharge) * 0.1;
-                gstChargeTextBox.Text = Convert.ToString(gstCharge + wrapTotal );
+                gstChargeTextBox.Text = Convert.ToString(gstCharge + wrapTotal);
             }
             catch (FormatException)
             {
