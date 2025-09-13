@@ -30,6 +30,7 @@ namespace ProductApps
         private void calculateButton_Click(object sender, RoutedEventArgs e)
         {
             double deliveryCharge = 25.0;
+            double wrapCharge = 5.0;
 
             try
             {
@@ -38,6 +39,7 @@ namespace ProductApps
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 double totalPayment = Convert.ToDouble(cProduct.TotalPayment);
                 totalChargeTextBox.Text = Convert.ToString(totalPayment + deliveryCharge);
+                wrapChargeTextBox.Text = Convert.ToString(totalPayment + deliveryCharge + wrapCharge);
             }
             catch (FormatException)
             {
